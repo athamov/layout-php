@@ -1,0 +1,40 @@
+.work {
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.work__sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.work__list {
+  gap:20px;
+}
+
+.work__image__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.work__image__column {
+  flex: 33%;
+  max-width: 30%;
+}
+
+.work__button {
+  margin: auto;
+}
+
+.work__parnter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 135px;
+}
