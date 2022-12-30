@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <title>Document</title>
 </head>
@@ -42,7 +44,7 @@
         </li>
       </ul>
     </navbar>
-    <section class="header" id="header">
+    <section class="header" id="header" data-aos="fade-up">
       <div class="header__content">
           <h2 class="head__text">
             Hello!!! <br />
@@ -72,14 +74,14 @@
 
       <div class="work__image__row">
         <div class="work__image__column">
-          <div class="image__container">
+          <div class="image__container" data-aos="zoom-out">
             <img class="image" src="./image/couple.jpg" alt="couple">
             <div class="overlay">
               <h3>artwork</h3>
               <a href="#">branding</a>
             </div>
           </div>
-          <div class="image__container">
+          <div class="image__container" data-aos="zoom-out-right">
             <img class="image" src="./image/white-board.jpg" alt="couple">
             <div class="overlay">
               <h3>artwork</h3>
@@ -87,15 +89,15 @@
             </div>
           </div>
         </div>
-        <div class="work__image__column">
-          <div class="image__container">
+        <div class="work__image__column" data-aos="zoom-out">
+          <div class="image__container" data-aos="zoom-in-down">
             <img class="image" src="./image/white-laptop-2.jpg" alt="laptop on board">
             <div class="overlay">
               <h3>artwork</h3>
               <a href="#">branding</a>
             </div>
           </div>
-          <div class="image__container">
+          <div class="image__container" data-aos="fade-down-left">
             <img class="image" src="./image/laptop.jpg" alt="laptop on board">
             <div class="overlay">
               <h3>artwork</h3>
@@ -104,14 +106,14 @@
           </div>
         </div>
         <div class="work__image__column">
-          <div class="image__container">
+          <div class="image__container" data-aos="zoom-out-left">
             <img class="image" src="./image/white-phone.jpg" alt="phone on board">
             <div class="overlay">
               <h3>artwork</h3>
               <a href="#">branding</a>
             </div>
           </div>
-          <div class="image__container">
+          <div class="image__container" data-aos="zoom-out-left">
             <img class="image" src="./image/white-laptop.jpg" alt="white laptop on board">
             <div class="overlay">
               <h3>artwork</h3>
@@ -124,7 +126,7 @@
       <button class="work__button">
         show me more
       </button>
-      <div class="work__parnter">
+      <div class="work__parnter" data-aos="fade-down-left">
         <img src="./image/partner-1.png" alt="partner" class="work__partner__image">
         <img src="./image/partner-2.png" alt="partner" class="work__partner__image">
         <img src="./image/partner-3.png" alt="partner" class="work__partner__image">
@@ -139,14 +141,14 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum commodi iusto deleniti doloribus repellendus numquam, nemo possimus adipisci illo!</p>
       </div>
       <div class="about__content">
-        <div class="about__image__container">
+        <div class="about__image__container" data-aos="fade-down">
           <img class="about__image" src="./image/person-1.jpg" alt="white laptop on board">
           <div class="about__overlay">
             <h3>Luke Skywalker</h3>
             <h5 href="#">Web designer</h5>
           </div>
         </div>
-        <div class="about__image__container">
+        <div class="about__image__container" data-aos="fade-down">
           <img class="about__image" src="./image/person-2.jpg" alt="white laptop on board">
           <div class="about__overlay">
             <h3>Luke Skywalker</h3>
@@ -165,7 +167,7 @@
         <h2>our blog</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum iste asperiores magnam ea aliquam perspiciatis sed. Labore provident.</p>
       </div>
-      <div class="blog__container">
+      <div class="blog__container" data-aos="fade-down">
         <div class="blog__card">
           <div class="image__container">
             <img class="image" src="./image/table-3.jpg" alt="couple">
@@ -216,20 +218,20 @@
         <form class="contact__form" action="message">
           <h3>Send Us Message</h3>
           <div class="form__input">
-            <label for="name">name</label>
             <input type="text" />
+            <label for="name">name</label>
           </div>
           <div class="form__input">
-            <label for="email">email</label>
             <input type="email" name="email" id="email" />
+            <label for="email">email</label>
           </div>
           <div class="form__input">
-            <label for="message">message</label>
             <textarea name="message" id="message" rows="4"></textarea>
+            <label for="message">message</label>
           </div>
           <button>Send Message</button>
         </form>
-        <div class="contact__image">
+        <div class="contact__image" data-aos="fade-up-right">
           <img src="./image/skyskyper.jpg" alt="">
         </div>
       </div>
@@ -265,6 +267,10 @@
       <a href="#header">back to top&nbsp;^</a>
     </div>
   </footer>
+
+  <script>
+    AOS.init();
+  </script>
   <script src="./js/index.js" ></script>
 </body>
 </html>

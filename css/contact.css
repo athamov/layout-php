@@ -24,17 +24,20 @@
 .form__input label {
   position: absolute;
   top: 0;
-  font-size: 12px;
-  order: -1;
+  left: 0;
+  font-size: 16px;
+  order: 1;
   margin: 10px;
   padding: 0 10px;
-  background-color: transparent;
+  background-color: white;
   -webkit-transition: top .2s ease-in-out,  font-size .2s ease-in-out;
   transition: top .2s ease-in-out,  font-size .2s ease-in-out;
 }
 
 .form__input input, .form__input textarea {
-  font-size:12px;
+  padding: 16px;
+  letter-spacing: 1px;
+  font-size:16px;
   width: 100%;
   margin-top: 10px;
   border:none;
@@ -49,8 +52,14 @@
 }
 
 .form__input input:focus + label {
-  background: #000;
-  top: -25px;
+  top: -10px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+.form__input textarea:focus + label {
+  top: -10px;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 6px;
@@ -94,4 +103,27 @@
   gap: 60px;
   margin-top: 75px;
   margin-bottom: 75px;
+}
+
+@media screen and (max-width:720px) {
+  .contact__content {
+    margin: auto;
+    width: fit-content;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact__form {
+    width: 60%;
+    margin: 20px auto;
+    justify-content: center;
+  }
+
+  .contact__form button {
+    margin: 10px auto;
+  }  
+  
+  .contact__image {
+    display: none;
+  }
 }

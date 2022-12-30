@@ -19,6 +19,7 @@
 
 .work__image__row {
   display: flex;
+  gap: 30px;
   flex-wrap: wrap;
   gap: 28px;
 }
@@ -26,6 +27,7 @@
 .work__image__column {
   flex: 33%;
   max-width: 30%;
+  gap:30px;
 }
 
 .work__button {
@@ -37,4 +39,21 @@
   flex-direction: row;
   justify-content: space-around;
   margin-top: 135px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .work__image__column {
+    display: flex;
+    /* flex-direction: row; */
+    flex: 50%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .work__image__column {
+    display: flex;
+    flex: 100%;
+  }
 }

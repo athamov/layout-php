@@ -17,7 +17,9 @@
   box-sizing: border-box;
 }
 
-body {
+html,body {
+  min-width: max-content;
+  /* width: 100vh; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
@@ -25,11 +27,10 @@ body {
 .container {
   width: 1170px;
   color: var(--black);
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
-/* LINK STYLE */
 a {
   background-image: linear-gradient(
     to right,
@@ -69,7 +70,6 @@ a:hover::before{
   width: 100%;
 }
 
-/* List */
 ul {
   list-style-type: none;
   display: flex;
@@ -78,7 +78,6 @@ ul {
   text-transform: uppercase;
 }
 
-/* text style */
 h2 {
   text-transform: uppercase;
   font-size: 44px;
@@ -92,7 +91,6 @@ p {
   line-height: 1;
 }
 
-/* button */ 
 button {
   width: 180px;
   height: 50px;
@@ -100,6 +98,7 @@ button {
   background: var(--yellow);
   border:none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .image__container {
@@ -156,4 +155,33 @@ button {
   width: 540px;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width:720px) {
+  h2,h3,h4,h6,p,a {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size:75px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  a {
+    font-size:30px;
+  }
+
+  button {
+    width: 250px;
+    height: 80px;
+    font-size:25px;
+  }
+
+  .section__head {
+    margin:150px auto 30px auto;
+    justify-content: center;
+  }
 }
